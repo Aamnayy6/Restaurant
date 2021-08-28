@@ -22,7 +22,6 @@ button{
   font-weight: bolder;
   font-family:sans-serif;
   border: none;
-  margin-right: 3rem;
   background-color: rgba(238, 130, 238, 0);
 }
 button:hover{
