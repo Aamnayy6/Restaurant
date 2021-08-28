@@ -11,14 +11,14 @@ contacttab.innerHTML = "CONTACT";
 tabbar.appendChild(contacttab);
 const linebreak = document.createElement('div');
 linebreak.classList.add('line');
-tabbar.appendChild(linebreak);
 tabbar.classList.add('tab');
 container.appendChild(tabbar);
-
+container.appendChild(linebreak);
 
 function sethomepage(){
     container.innerHTML = "";
     container.appendChild(tabbar);
+    container.appendChild(linebreak);
     let banner = document.createElement('div');
 let title = document.createElement('div');
 title.textContent = "Applebee's";
@@ -53,6 +53,7 @@ function createmenuitem(name, description, price){
 function setmenupage(){
     container.innerHTML ="";
     container.appendChild(tabbar);
+    container.appendChild(linebreak);
     let box = document.createElement('div');
     box.classList.add('menubox');
     box.id = "box";
@@ -75,6 +76,7 @@ function setmenupage(){
 function setcontactpage(){
     container.innerHTML="";
     container.appendChild(tabbar);
+    container.appendChild(linebreak);
     let contactbox = document.createElement('div');
     contactbox.classList.add('menubox');
     let phonenumber = document.createElement('p');
