@@ -1,0 +1,17 @@
+const container = document.getElementById('content');
+const tabbar = document.createElement('div');
+const hometab = document.createElement('button');
+hometab.innerHTML = "HOME";
+tabbar.appendChild(hometab);
+const menutab = document.createElement('button');
+menutab.innerHTML = "MENU";
+tabbar.appendChild(menutab);
+const contacttab = document.createElement('button');
+contacttab.innerHTML = "CONTACT";
+tabbar.appendChild(contacttab);
+const linebreak = document.createElement('div');
+linebreak.classList.add('line');
+tabbar.classList.add('tab');
+container.appendChild(tabbar);
+container.appendChild(linebreak);
+export {container, tabbar, hometab, menutab, contacttab, linebreak};
